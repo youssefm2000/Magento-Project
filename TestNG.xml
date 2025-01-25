@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Paymob Suite">
+    <parameter name="browser" value="chrome"/>
+    <test thread-count="5" name="Navigate to Home Page">
+        <classes>
+            <class name="Tests.TC01_HomeTest"/>
+        </classes>
+    </test>
+    <test thread-count="5" name="Register with Valid Data">
+        <classes>
+            <class name="Tests.TC02_RegisterTest"/>
+        </classes>
+    </test>
+    <test thread-count="5" name="Add The 2 Products To Compare List">
+        <classes>
+            <class name="Tests.TC03_AddProductsTest"/>
+        </classes>
+    </test>
+</suite>
